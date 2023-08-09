@@ -1,0 +1,805 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+}
+
+/* head index.html*/
+
+nav {
+    width: 100%;
+    height: 75px auto;
+    margin: 0;
+    padding: 20px auto;
+    background-color: #3d16c7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-around;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+}
+.img__header {
+    width: 200px;
+    padding: 20px;
+    margin: auto;
+    align-items: center;
+    align-content: space-around;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+nav ul a {
+    align-content: space-around;
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+    transition: all 600ms ease;
+    border-bottom: 20px solid transparent;
+    
+}
+nav ul a:hover {
+    border-bottom: 4px solid greenyellow;
+    background-color: white;
+    border-radius: 15px;
+    color: #3d16c7;
+}
+
+nav ul li{
+    word-spacing: 10PX;
+    line-height: 4.2;
+} 
+
+/* banner página principal index.html */
+.contenedor2 .fondo .banner1 .fotoBan {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto ;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: space-around;
+
+
+    width: 100%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+}
+
+/* main index.html */
+
+.main {
+    width: 100%;
+    max-width: 100%;
+}
+
+.franja {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 10px;
+
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+}
+.franja h3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    word-spacing: 18px;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    color: yellow;
+    overflow: hidden;
+}
+
+/* estilo textos index.html */
+.flex-cont-texto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+    width: 70%;
+    margin: 0;
+    padding: 5% 10%;
+
+    background-image: url(../Img/FondoBase.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.flex-cont-texto .caja-texto {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-cont-texto .caja-texto h2 {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.5vw;
+    letter-spacing: 5px;
+}
+
+
+.flex-cont-texto .caja-texto p {
+    margin: 0 auto;
+    padding: 15px 5px;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-size: 1.4vw;
+    letter-spacing: 1px;
+    
+}
+
+
+.flex-cont-texto .caja-texto .logo__seg__fami img {
+    min-width: 10%;
+    max-width: 20%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+
+
+/* box gris y fototeca index.html */
+
+.fototeca {    
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+}
+
+/* .fototeca:hover {
+    opacity: 1;
+    border: solid white 2px;
+} */
+
+.foto1 {
+    background-image: url(../Img/Seguro\ de\ viaje.jpg);
+}
+
+.foto2 {
+    background-image: url(../Img/Padre\ e\ hijo.jpg);
+}
+
+.foto3 {
+    background-image: url(../Img/Familia.jpg);
+}
+
+.foto4 {
+    background-image: url(../Img/Mujer.jpg);
+}
+
+/* efectos servicios index.html */
+
+.servi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 5% 5%;
+}
+
+.caja__general {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.caja h3 {
+    margin: 0 auto;
+    padding: 5px 5px;
+    display: flex;
+    max-width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 2vw;
+    letter-spacing: 5px;
+}
+
+.caja p {
+    margin: 0 auto;
+    padding: 15px 5px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-size: 1.4vw;
+    letter-spacing: 1px;
+}
+
+.caja img{
+    min-width: 10%;
+    max-width: 20%;
+    margin: 0 auto;
+    padding: 0 auto; 
+}
+
+/* boton cotizar general del proyecto */
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: rgba(220, 220, 220, 0.151);
+}
+
+.cotizar {
+    background-color: yellowgreen;
+    color: #FFF;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+}
+
+.cotizar:hover {
+    background-color: #15ff00;
+}
+
+
+
+/* footer general del proyecto*/
+
+.pie-pagina {
+    width: 100%;
+    background-color: #3d16c7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 20px;
+    justify-items: center;
+}
+
+.pie-pagina .grupo-1 .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.pie-pagina .grupo-1 .box img {
+    width: 250px;
+    max-width: 100%;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.pie-pagina .grupo-1 .box p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.pie-pagina .grupo-1 .red-social {
+    margin-top: 15px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    color: white;
+    margin-right: 10px;
+    background-color: #3d16c7;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: #3d16c7;
+    background-color: white;
+}
+
+.pie-pagina .grupo-2 {
+    width: 100%;
+    background-color: #3d16c7;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* TERMINOS */
+
+/* efectos terminos.html*/
+
+.terminos {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+}
+
+.terminos h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.terminos ol {
+    padding-left: 20px;
+}
+
+.terminos li {
+    margin-bottom: 30px;
+}
+
+.terminos h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.terminos p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Efectos nosotros.html */
+
+.main__nosotros {
+    background-image: url(../Img/FondoBase.png);
+    background-size: 100%;
+    background-position: center center;
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.nosotros {
+    width: 90%;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.nos__container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+    
+}
+
+.nos__container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.nos__container p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.nos__container iframe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+/* Efectos servicios.html */
+
+
+.main__servicios {
+    background-image: url(../Img/FondoBase.png);
+    background-size: 100%;
+    background-position: center center;
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.servicios h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding: 2px 2px;
+    text-align: center;
+    color: black;
+}
+
+.ser__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ser__container .servicio {
+    flex-basis: 30%;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #cccccc3f;
+    /* background-color: #20bf55;
+    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%); */
+
+}
+
+
+.ser__container .servicio h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px 20px;
+    padding: 2px 2px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: black;
+    background-color: #faa499;
+    background-image: linear-gradient(319deg, #faa499 0%, #f7dd85 37%, #ffc55c 100%);
+}
+
+.ser__container .servicio p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.ser__container .servicio h4 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 2px 2px;
+    text-align: center;
+    color: black;
+    background-color: #faa499;
+    background-image: linear-gradient(319deg, #faa499 0%, #f7dd85 37%, #ffc55c 100%);
+}
+
+.ser__container .servicio ul {
+    padding-left: 25px;
+}
+
+.ser__container .servicio ul li {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.ser__container .servicio h5 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+
+/* efectos contacto.html*/
+
+
+.main__contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../Img/FondoBase.png);
+    background-size: 100%;
+    background-position: center center;
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333333;
+}
+
+.formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.formulario input[type="text"],
+.formulario input[type="date"],
+.formulario input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.formulario input[type="radio"] {
+    margin-right: 5px;
+}
+
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.formulario input[type="submit"],
+.formulario input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover,
+.formulario input[type="reset"]:hover {
+    background-color: #555555;
+}
+
+.comentarios {
+    margin-top: 20px;
+}
+
+.comentarios h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.comentarios textarea {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+
+/* efectos cotizador.html*/
+/* Estilos generales */
+
+
+
+.coti__body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.coti__body h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+input[type="email"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.telefono-container {
+    display: flex;
+    align-items: center;
+}
+
+.telefono-container select {
+    flex: 0 0 80px;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilos específicos para el cotizador */
+
+
+.cotizador h2 {
+    text-align: center;
+}
+
+
+.cotizador {
+    background-color: #f9f9f9;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cotizar-btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.cotizar-btn:hover {
+    background-color: #0056b3;
+}
+
+.edades-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* Trate de hacer una lista de selección de viajeros, y que a su vez, de acuerdo a la cantidad de viajeros seleccionados aparezca la ventana para la indicación de edad de cada uno, pero supe como hacerlo */
+
+.casillas-edad > div {
+display: none;
+}
+
+.casillas-edad > div:target {
+display: block;
+}
+
+.edades-container .casilla-edad {
+display: none;
+}
+
+.edades-container .casilla-edad:target {
+display: block;
+}
+
+.edades-container .casilla-edad.active {
+display: block;
+}
+
+.edades-container .casilla-edad {
+    display: none;
+}
+
+.edades-container .casilla-edad:target {
+    display: block;
+}
+
+.card-wrapper {
+    column-gap: 8px;
+}
