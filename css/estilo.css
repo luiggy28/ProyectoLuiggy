@@ -976,23 +976,26 @@ display: block;
     .pie-pagina .grupo-1 .box {
         height: 100%;
     }
-    .navbar-toggler {
-        display: block;
-        background-color: white;
-        border: none;
-    }
-    .navbar-toggler-icon {
-        background-color: #3d16c7; /* Color del ícono de hamburguesa */
-    }
-    .header__menu {
-        text-align: center;
-    }
-    .header__item {
-        padding: 10px 0;
-    }
-    .img__header {
-        width: 150px; /* Tamaño ajustado del logo en pantallas pequeñas */
-    }
     
+    .header__menu li{
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .header__menu li{
+        margin: 0 auto;
+        padding: 0 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-area: auto;
+    }
+    .header__logo {
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-column: auto;
+    }
 }
 
