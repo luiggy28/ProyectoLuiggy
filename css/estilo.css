@@ -52,10 +52,9 @@ nav ul a {
     align-content: space-around;
     color: white;
     text-decoration: none;
-    padding: 0.7rem;
+    padding: 10px;
     transition: all 600ms ease;
-    border-bottom: 20px solid transparent;
-    
+    border-bottom: 20px solid transparent;    
 }
 nav ul a:hover {
     border-bottom: 4px solid greenyellow;
@@ -942,7 +941,7 @@ display: block;
 }
 
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media  and (max-width: 991.98px) {
     
 }
 
@@ -976,26 +975,19 @@ display: block;
     .pie-pagina .grupo-1 .box {
         height: 100%;
     }
-    
-    .header__menu li{
-        margin: 0 auto;
-        padding: 0;
+    .header__nav {
         display: grid;
         grid-template-columns: 1fr;
-    }
-
-    .header__menu li{
-        margin: 0 auto;
-        padding: 0 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-area: auto;
     }
     .header__logo {
         margin: 0 auto;
         padding: 0;
         display: grid;
+        grid-template-columns: 1fr;
+    }
+    .header__menu {
         grid-column: auto;
+        grid-auto-rows: auto;
     }
 }
 
