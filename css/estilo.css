@@ -942,16 +942,6 @@ display: block;
     margin: 0 auto;
 }
 
-@media (min-width: 992px) {
-    
-}
-
-
-@media  and (max-width: 991.98px) {
-    
-}
-
-
 @media (min-width: 797px) and (max-width: 857px) {
     .nav-menu-item {
         font-size: 14px;
