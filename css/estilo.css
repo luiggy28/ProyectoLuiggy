@@ -119,7 +119,7 @@ p{
     flex-wrap: wrap;
     margin: 0;
     padding: 10px;
-
+    
     background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
     box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
 }
@@ -127,7 +127,7 @@ p{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    max-width: 80%;
     text-align: center;
     font-weight: bold;
     font-style: italic;
@@ -139,58 +139,55 @@ p{
 }
 
 /* estilo textos index.html */
-.flex-cont-texto {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    justify-items: center;
-    width: 70%;
-    margin: 0;
-    padding: 5% 10%;
-    background-image: url(../Img/FondoBase.png);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    background-repeat: no-repeat;
+.caja-texto {
+    margin: 0 auto;
+    padding: 20px 20px;
+    background-color: white;
+    max-width: 992px;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "logo__servi"
+        "title1"
+        "p1"
+        "title2"
+        "p2";
+    align-content: center;
+    align-items: center;
 }
 
-.flex-cont-texto .caja-texto {
-    margin: 0;
-    padding: 0;
+.logo__servi {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    line-height: 1.6;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
 }
 
-.flex-cont-texto .caja-texto h2 {
-    margin: 0 auto;
-    padding: 0;
-    font-size: 25px;
-    letter-spacing: 5px;
+.caja-texto img {
+    width: 200px;
 }
 
-
-.flex-cont-texto .caja-texto p {
-    padding: 1px 1px;
-    font-size: 20px;
-    letter-spacing: 1px;
+.logo__servi {
+    grid-area: logo__servi;
 }
 
-
-.flex-cont-texto .caja-texto .logo__seg__fami img {
-    width: 100px;
-    margin: 0 auto;
-    padding: 0 auto;
+.title1 {
+    grid-area: title1;
 }
 
+.p1 {
+    grid-area: p1;
+}
+
+.title2 {
+    grid-area: title2;
+}
+
+.p2 {
+    grid-area: p2;
+}
 
 
 /* box gris y fototeca index.html */
@@ -200,11 +197,6 @@ p{
     background-position: center;
     height: 180px;
 }
-
-/* .fototeca:hover {
-    opacity: 1;
-    border: solid white 2px;
-} */
 
 .foto1 {
     background-image: url(../Img/Seguro\ de\ viaje.jpg);
@@ -223,7 +215,6 @@ p{
 }
 
 /* efectos servicios index.html */
-
 .servi {
     display: flex;
     flex-direction: row;
@@ -231,43 +222,41 @@ p{
     justify-content: space-around;
     justify-items: center;
     width: 100%;
-    margin: 0;
-    padding: 3px 3px;
+    padding: 3px;
 }
 
 .caja__general {
-    margin: 0;
-    padding: 0;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
-    line-height: 1.6;
-    width: 100%;
+}
+
+.caja {
     max-width: 100%;
-    height: auto;
+}
+
+.caja h3, .caja p {
+    margin: 0 auto;
 }
 
 .caja h3 {
-    margin: 0 auto;
-    padding: 3px 3px;
+    padding: 3px;
     font-size: 20px;
     letter-spacing: 5px;
 }
 
 .caja p {
-    margin: 0 auto;
     padding: 8px 3px;
     font-size: 15px;
     letter-spacing: 1px;
 }
 
-.caja img{
+.caja img {
     width: 100px;
     margin: 0 auto;
-    padding: 0 auto; 
 }
+
 
 /* boton cotizar general del proyecto */
 
@@ -276,7 +265,6 @@ p{
     justify-content: center;
     align-items: center;
     height: 100px;
-    /* background-color: rgba(220, 220, 220, 0.151); */
     background-color:whitesmoke;
 }
 
@@ -446,10 +434,9 @@ h2, h3, p {
 
 
 .main__servicios {
-    background-image: url(../Img/FondoBase.png);
+    background-color: white;
     background-size: 100%;
     background-position: center center;
-    background-color: #000000;
     padding: 50px 0;
 }
 
@@ -542,7 +529,7 @@ h2, h3, p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: auto;
     background-image: url(../Img/FondoBase.png);
     background-size: 100%;
     background-position: center center;
@@ -776,7 +763,7 @@ display: block;
 .container__guia {
     margin: 0 auto;
     background-color: white;
-    height: 1000px;
+    min-height: auto;
     padding: 10px 10px;
     display: grid;
     grid-template-columns: 3fr 1fr 3fr;
@@ -979,6 +966,14 @@ display: block;
         margin-top: 60px;
     }
 
+    .caja-texto img {
+        width: 180px;
+    }
+
+    .franja h3 {
+        font-size: 20px;
+    }
+
     .pie-pagina .grupo-1 {
         grid-template-columns: 1fr;
     }
@@ -1040,7 +1035,7 @@ display: block;
     .container__guia {
         margin: 0 auto;
         background-color: white;
-        height: 1000px;
+        min-height: auto;
         padding: 10px 10px; 
         display: grid;
         grid-template-columns: 1fr 3fr 3fr;
@@ -1054,11 +1049,6 @@ display: block;
             "numero4 img4 texto4";
     }
     
-    .container__guia img {
-        align-items: center;
-        justify-content: center;
-    }
-
     .img1 {
         grid-area: img1;
         margin: 0 auto;
@@ -1227,15 +1217,26 @@ display: block;
 }
 
 
-@media (max-width: 575.98px) {
+@media (max-width: 660px) {
     body {
         margin-top: 60px;
     }
 
+    .franja h3 {
+        font-size: 15px;
+    }
+
+    .caja-texto img {
+        width: 150px;
+    }
+
     .container h2, 
-    .container h3, 
+    .container h3 {
+        font-size: 25px;
+    }
+
     .container p {
-        font-size: 0.9rem;
+        font-size: 20px;
     }
     .pie-pagina .grupo-1 {
         grid-template-columns: 1fr;
@@ -1243,6 +1244,47 @@ display: block;
 
     .pie-pagina .grupo-1 .box {
         height: 100%;
-    }    
+    }
+
+    .guia__cotizar {
+        margin: 0 auto;
+        padding: 20px 20px;
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: 0.6rem;
+    }
+    
+    .container__guia {
+        margin: 0 auto;
+        background-color: white;
+        min-height: auto;
+        padding: 10px 10px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: repeat(8, 1fr);
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "numero1 img1"
+            "numero1 texto1"
+            "numero2 img2"
+            "numero2 texto2"
+            "numero3 img3"
+            "numero3 texto3"
+            "numero4 img4"
+            "numero4 texto4";
+    }
+
+    .logo img{
+        width: 100px;
+        padding: 0;
+        margin-right: 20px;
+        line-height: 60px;
+    }
+    
+    .nav-toggle {
+        display: block;
+        margin-right: 20px;
+    }
 }
 
