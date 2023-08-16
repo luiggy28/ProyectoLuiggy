@@ -408,7 +408,6 @@ p{
 /* Efectos nosotros.html */
 
 .main__nosotros {
-    background-image: url(../Img/FondoBase.png);
     background-size: 100%;
     background-position: center center;
     background-color: #f4f4f4;
@@ -425,7 +424,12 @@ p{
     font-family: 'Bebas Neue', sans-serif;
 }
 
-h2, h3, p {
+.nosotros h2 {
+    font-size: 50px;
+    text-align: center; 
+}
+
+.nosotros h3, p {
     text-align: center; 
 }
 
@@ -976,6 +980,10 @@ display: block;
         align-content: center;
     }
 
+    .nosotros h2 {
+        font-size: 45px;
+    }
+
     .header {
         height: 60px;
     }
@@ -1220,7 +1228,10 @@ display: block;
         width: 150px;
     }
 
-    .container h2, 
+    .container h2 {
+        font-size: 40px;
+    }
+    
     .container h3 {
         font-size: 25px;
     }
