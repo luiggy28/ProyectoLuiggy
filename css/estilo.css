@@ -9,6 +9,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Inter', sans-serif;
     background-color: white;
+    margin-top: 80px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,54 +22,73 @@ p{
 
 /* head index.html*/
 
-nav {
+.header {
+    background-color: blue;
+    height: 80px;
+    position: fixed;
     width: 100%;
-    height: 75px auto;
-    margin: 0;
-    padding: 20px auto;
-    background-color: #3d16c7;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: space-around;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    align-items: center; /* Alinear el logo y el menú verticalmente en el centro */
+    max-width: 992px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 20px; /* Espaciado para que el contenido no quede pegado a los bordes */
 }
-.img__header {
-    width: 200px;
-    padding: 20px;
-    margin: auto;
-    align-items: center;
-    align-content: space-around;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 20px;
-}
-nav ul a {
-    align-content: space-around;
+
+.nav-link {
     color: white;
-    text-decoration: none;
-    padding: 10px;
-    transition: all 600ms ease;
-    border-bottom: 20px solid transparent;    
+    text-decoration: none; 
+    white-space: nowrap; /* Asegura que el texto del menú no se divida */
 }
-nav ul a:hover {
+
+.logo img {
+    width: 170px;
+    display: block;
+    padding: 0 10px;
+    line-height: 80px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu-item {
+    font-size: 15px;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+.nav-menu-link {
+    padding: 8px 9px;
+    border-radius: 5px;
+}
+
+.nav-menu-link:hover {
     border-bottom: 4px solid greenyellow;
     background-color: white;
-    border-radius: 15px;
-    color: #3d16c7;
+    border-radius: 5px;    
+    transition: 0.5s;
+    color: blue;
 }
 
-nav ul li{
-    word-spacing: 10PX;
-    line-height: 4.2;
-} 
-
-
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
 
 /* banner página principal index.html */
 .contenedor2 .fondo .banner1 .fotoBan {
@@ -612,7 +632,6 @@ h2, h3, p {
 /* Estilos generales */
 
 
-
 .coti__body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -805,13 +824,13 @@ display: block;
 .dotted-line-container::after {
     content: "";
     background: linear-gradient(rgba(75, 75, 75, 0.671) 50%, transparent 50%);
-    background-size: 5px 10px; /* Ajusta según el tamaño y el espaciado de los puntos que desees */
+    background-size: 5px 10px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 50%;
     width: 5px; /* Ancho de la línea de puntos */
-    transform: translateX(-50%); /* Centrar la línea horizontalmente */
+    transform: translateX(-50%);
 }
 
 
@@ -856,13 +875,13 @@ display: block;
 .dotted-line-container::after {
     content: "";
     background: linear-gradient(rgba(75, 75, 75, 0.671) 50%, transparent 50%);
-    background-size: 5px 10px; /* Ajusta según el tamaño y el espaciado de los puntos que desees */
+    background-size: 5px 10px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 50%;
     width: 5px; /* Ancho de la línea de puntos */
-    transform: translateX(-50%); /* Centrar la línea horizontalmente */
+    transform: translateX(-50%);
 }
 
 .img2 {
@@ -904,13 +923,13 @@ display: block;
 .dotted-line-container::after {
     content: "";
     background: linear-gradient(rgba(75, 75, 75, 0.671) 50%, transparent 50%);
-    background-size: 5px 10px; /* Ajusta según el tamaño y el espaciado de los puntos que desees */
+    background-size: 5px 10px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 50%;
     width: 5px; /* Ancho de la línea de puntos */
-    transform: translateX(-50%); /* Centrar la línea horizontalmente */
+    transform: translateX(-50%);
 }
 
 .texto3 {
@@ -945,8 +964,21 @@ display: block;
     
 }
 
-/* Estilos para Small (<768px) */
-@media (max-width: 767.98px) {
+
+@media (min-width: 797px) and (max-width: 857px) {
+    .nav-menu-item {
+        font-size: 14px;
+        margin: 0 7px;
+    }
+}
+
+
+/* Estilos para Small (<797px) */
+@media (max-width: 796.98px) {
+    body {
+        margin-top: 60px;
+    }
+
     .pie-pagina .grupo-1 {
         grid-template-columns: 1fr;
     }
@@ -959,10 +991,247 @@ display: block;
         align-content: center;
     }
 
+    .header {
+        height: 60px;
+    }
+    
+    .logo img{
+        width: 160px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    
+    .nav-toggle {
+        display: block;
+        margin-right: 60px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: #3d16c7;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        transform: translateX(100%);
+        transition: transform 0.3s;
+        font-size: 20px;
+    }
+    
+    .nav-menu_visible {
+        transform: translateX(0);
+    }
+
+    /* Cambio guía compra seguro */
+    
+    .guia__cotizar {
+        margin: 0 auto;
+        padding: 30px 30px;
+        background-color: whitesmoke;
+        text-align: center;
+        font-size: 35px;
+        letter-spacing: 0.6rem;
+    }
+    .container__guia {
+        margin: 0 auto;
+        background-color: white;
+        height: 1000px;
+        padding: 10px 10px; 
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr;
+        grid-template-rows: 2fr 2fr 2fr 2fr;
+        gap: 5px 7px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "numero1 img1 texto1"
+            "numero2 img2 texto2"
+            "numero3 img3 texto3"
+            "numero4 img4 texto4";
+    }
+    
+    .container__guia img {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img1 {
+        grid-area: img1;
+        margin: 0 auto;
+    }
+    
+    .numero1 {
+        grid-area: numero1;
+        position: relative;
+        font-family: 'DM Serif Display', serif;
+        font-size: 100px;
+        color: darkcyan;
+        margin: 0 auto;
+        padding: 0px 0px 20px;
+        z-index: 2;
+    }
+    
+    .numero1 p {
+        position: relative;
+        margin: 0;
+        z-index: 0;
+        text-align: center;
+    }
+    
+    .dotted-line-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: calc(100% - 100px);
+        z-index: -1;
+    }
+    
+    .dotted-line-container::after {
+        content: "";
+        background: linear-gradient(rgba(75, 75, 75, 0.671) 50%, transparent 50%);
+        background-size: 5px 10px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 5px; /* Ancho de la línea de puntos */
+        transform: translateX(-50%);
+    }
+
+    .texto1 {
+        grid-area: texto1;
+        margin: 0 auto;
+        padding: 25px 10px;
+    }
+    
+    .texto2 {
+        grid-area: texto2;
+        margin: 0 auto;
+        padding: 25px 10px;
+    }
+    
+    .numero2 {
+        grid-area: numero2;
+        position: relative;
+        font-family: 'DM Serif Display', serif;
+        font-size: 100px;
+        color: darkcyan;
+        margin: 0 auto;
+        padding: 0px 0px 20px;
+        z-index: 2;
+    }
+    
+    .numero2 p {
+        position: relative;
+        margin: 0;
+        z-index: 0;
+        text-align: center;
+    }
+    
+    .dotted-line-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: calc(100% - 100px);
+        z-index: -1;
+    }
+    
+    .dotted-line-container::after {
+        content: "";
+        background: linear-gradient(rgba(75, 75, 75, 0.671) 50%, transparent 50%);
+        background-size: 5px 10px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 5px; /* Ancho de la línea de puntos */
+        transform: translateX(-50%);
+    }
+    
+    .img2 {
+        grid-area: img2;
+        margin: 0 auto;
+    }
+    
+    .img3 {
+        grid-area: img3;
+        margin: 0 auto;
+    }
+    
+    .numero3 {
+        grid-area: numero3;
+        position: relative;
+        font-family: 'DM Serif Display', serif;
+        font-size: 100px;
+        color: darkcyan;
+        margin: 0 auto;
+        padding: 0px 0px 20px;
+        z-index: 2;
+    }
+    
+    .numero3 p {
+        position: relative;
+        margin: 0;
+        z-index: 0;
+        text-align: center;
+    }
+    
+    .dotted-line-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: calc(100% - 100px);
+        z-index: -1;
+    }
+    
+    .dotted-line-container::after {
+        content: "";
+        background: linear-gradient(rgba(75, 75, 75, 0.671) 50%, transparent 50%);
+        background-size: 5px 10px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 5px; /* Ancho de la línea de puntos */
+        transform: translateX(-50%);
+    }
+    
+    .texto3 {
+        grid-area: texto3;
+        margin: 0 auto;
+        padding: 25px 10px;
+    }
+    
+    .texto4 {
+        grid-area: texto4;
+        margin: 0 auto;
+        padding: 25px 10px;
+    }
+    
+    .numero4 {
+        grid-area: numero4;
+        font-family: 'DM Serif Display', serif;
+        font-size: 100px;
+        color: darkcyan;
+        margin: 0 auto;
+    }
+    
+    .img4 {
+        grid-area: img4;
+        margin: 0 auto;
+    }
 }
 
 
 @media (max-width: 575.98px) {
+    body {
+        margin-top: 60px;
+    }
+
     .container h2, 
     .container h3, 
     .container p {
@@ -974,20 +1243,6 @@ display: block;
 
     .pie-pagina .grupo-1 .box {
         height: 100%;
-    }
-    .header__nav {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .header__logo {
-        margin: 0 auto;
-        padding: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .header__menu {
-        grid-column: auto;
-        grid-auto-rows: auto;
-    }
+    }    
 }
 
