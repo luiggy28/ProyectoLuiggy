@@ -25,90 +25,75 @@ p {
 	font-family: $font-secondary;
 }
 
-.header {
-	background-color: $color2;
-	height: 80px;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 1000;
-}
-
-.nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 992px;
-	margin: 0 auto;
-	height: 100%;
-	padding: 0 20px;
-}
-
-.nav-link, .nav-toggle {
-	color: $color1;
-	text-decoration: none;
-	white-space: nowrap;
-}
-
-.nav-link:hover {
-	border-bottom: 4px solid greenyellow;
-	background-color: $color1;
-	border-radius: 5px;
-	transition: 0.5s;
-	color: $color2;
-}
-
-.nav-toggle {
-	background: none;
-	border: none;
-	font-size: 30px;
-	cursor: pointer;
-	display: none;
-}
-
-.logo img {
-	width: 170px;
-	display: block;
-	padding: 0 10px;
-	line-height: 80px;
-}
-
-.nav li {
+ul {
     font-family: $font-secondary;
 }
 
-.nav-menu {
-	display: flex;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
+.header {
+    background-color: $color2;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 
-.nav-menu-item {
-	font-size: 15px;
-	margin: 0 10px;
-}
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 992px;
+        margin: 0 auto;
+        height: 100%;
+        padding: 0 20px;
 
-.nav-menu-link {
-	padding: 8px 9px;
-	border-radius: 5px;
-	&:hover {
-		border-bottom: 4px solid greenyellow;
-		background-color: $color1;
-		border-radius: 5px;
-		transition: 0.5s;
-		color: $color2;
-	}
+        .nav-link {
+            color: $color1;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .logo img {
+            width: 170px;
+            display: block;
+            padding: 0 10px;
+            line-height: 80px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            .nav-menu-item {
+                font-size: $base-font-size - 1px;
+                margin: 0 10px;
+                white-space: nowrap;
+
+                .nav-menu-link {
+                    padding: 8px 9px;
+                    border-radius: 5px;
+                    &:hover {
+                        border-bottom: 4px solid greenyellow;
+                        background-color: $color1;
+                        border-radius: 5px;
+                        transition: 0.5s;
+                        color: $color2;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .nav-toggle {
-	color: $color2;
-	background: none;
-	border: none;
-	font-size: 30px;
-	cursor: pointer;
-	display: none;
+    color: $color1;
+    border: none;
+    background: none;
+    display: none;
+    margin-right: 60px;    
+    font-size: 30px;
 }
 
 .contenedor2 {
@@ -400,7 +385,7 @@ p {
     }
 
     ol {
-        padding-left: 25px;
+        padding-left: 0;
         list-style-type: none;
         font-size: 30px;
     }
@@ -443,10 +428,15 @@ p {
     padding: 50px;
     margin: 0 auto;
     font-family: $font-primary;
-    text-align: center;
+    text-align: justify;
 
     h2 {
         font-size: 50px;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
     }
 }
 
