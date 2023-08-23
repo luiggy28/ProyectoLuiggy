@@ -149,7 +149,7 @@ ul {
 .caja-texto {
 	margin: 0 auto;
 	padding: 20px 20px;
-	background-color: $color1;
+	background: none;
 	max-width: 992px;
 	max-height: min-content;
 	display: grid;
@@ -435,7 +435,7 @@ ul {
         text-align: center;
     }
 
-    h2 {
+    h3 {
         text-align: center;
     }
 }
@@ -533,7 +533,7 @@ ul {
         color: $color1;
     }
     padding: 50px 0;
-    font-family: $font-tertiary;
+    font-family: $font-secondary;
 }
 
 .formulario {
@@ -545,7 +545,6 @@ ul {
     h2 {
         margin-bottom: 20px;
         text-align: center;
-        color: $dark-purple;
     }
 
     label {
@@ -573,6 +572,7 @@ ul {
 
     input[type="submit"],
     input[type="reset"] {
+        margin: 5px 0;
     @include buttonStyles;
     }
 
@@ -602,7 +602,7 @@ ul {
 /* Estilos generales */
 
 .coti__body {
-    font-family: $font-tertiary;
+    font-family: $font-primary;
     margin: 0;
     padding: 0;
 
@@ -617,6 +617,7 @@ form {
     max-width: 400px;
     width: 100%;
     margin: 0 auto;
+    font-family: $font-secondary;
 }
 
 .form-group {
