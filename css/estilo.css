@@ -73,7 +73,7 @@ ul {
   margin-right: 60px;
   font-size: 30px; }
 
-.contenedor2 .fondo .banner1 .fotoBan {
+.fotoBan {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -123,7 +123,7 @@ ul {
   grid-gap: 20px;
   grid-template-areas: "logo__servi" "title1" "p1" "title2" "p2";
   justify-content: center;
-  align-content: center; }
+  text-align: center; }
   .caja-texto h2 {
     margin: 0 auto; }
   .caja-texto img {
@@ -177,7 +177,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  max-width: 992px; }
 
 .caja {
   max-width: 100%; }
@@ -362,6 +363,9 @@ ul {
     padding: 2px 2px;
     color: black; }
 
+.container__guia img {
+  width: 150px; }
+
 .ser__container {
   display: flex;
   flex-wrap: wrap;
@@ -397,6 +401,16 @@ ul {
       margin-bottom: 15px;
       font-weight: bold;
       letter-spacing: 2px; }
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: inherit; }
+
+.accordion-button:not(.collapsed) {
+  background-color: inherit; }
+
+.accordion-body {
+  font-family: "Montserrat", sans-serif; }
 
 /* Pag Contacto */
 .main__contacto {
@@ -749,6 +763,8 @@ input[type="submit"] {
     grid-template-columns: 1fr; }
     .pie-pagina .grupo-1 .box {
       height: 100%; }
+  .servicios {
+    width: 90%; }
   .nosotros .container {
     align-content: center;
     text-align: justify; }
@@ -872,8 +888,7 @@ input[type="submit"] {
     padding: 10px 10px;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(8, 1fr);
-    gap: 10px 10px;
+    gap: 5px 5px;
     grid-auto-flow: row;
     grid-template-areas: "numero1 img1" "numero1 texto1" "numero2 img2" "numero2 texto2" "numero3 img3" "numero3 texto3" "numero4 img4" "numero4 texto4"; }
   .logo img {

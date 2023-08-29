@@ -1,0 +1,15 @@
+@mixin transition($time: 0.5s) {
+    transition: $time;
+}
+
+@mixin buttonStyles {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: $button-bg;
+    color: $color1;
+    font-weight: bold;
+    cursor: pointer;
+    @include transition();
+}
